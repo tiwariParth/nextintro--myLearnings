@@ -16,7 +16,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="p-4 border-b border-blue-100 pb-4">
+          <ul className="flex justify-between">
+            <li>Medium</li>
+            <ul className="flex gap-10">
+              <li>option 1</li>
+              <li>option 2</li>
+            </ul>
+          </ul>
+        </div>
+        {children}
+      </body>
     </html>
   );
 }
